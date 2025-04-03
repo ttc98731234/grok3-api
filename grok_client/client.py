@@ -12,6 +12,14 @@ class GrokClient:
                 - x-challenge=TkC4D...
                 - sso=eyJhbGci...
                 - sso-rw=eyJhbGci...
+                }
+
+# Initialize the client
+client = GrokClient(cookies)
+
+# Send a message and get response
+response = client.send_message("write a poem")
+print(response)
         """
         self.base_url = "https://grok.com/rest/app-chat/conversations/new"
         self.cookies = cookies
