@@ -8,11 +8,10 @@ class GrokClient:
 
         Args:
             cookies (dict): Dictionary containing cookie values
-                - x-anonuserid
-                - x-challenge
-                - x-signature
-                - sso
-                - sso-rw
+                - x-anonuserid=ffdd32e1
+                - x-challenge=TkC4D...
+                - sso=eyJhbGci...
+                - sso-rw=eyJhbGci...
         """
         self.base_url = "https://grok.com/rest/app-chat/conversations/new"
         self.cookies = cookies
